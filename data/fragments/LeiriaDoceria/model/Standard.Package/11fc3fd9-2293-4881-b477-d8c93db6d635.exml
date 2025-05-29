@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="leiriadoceria" version="4">
+  <OBJECT>
+    <ID name="leiriadoceria" mc="Standard.Package" uid="11fc3fd9-2293-4881-b477-d8c93db6d635"/>
+    <PID name="LeiriaDoceria" mc="Standard.Project" uid="ce583483-dd4e-4050-841e-0c74282d22f0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[leiriadoceria]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Pedido" mc="Standard.Class" uid="1d9b97e8-1fab-4b71-a3c4-77cb42a7e2c8"/>
+        <COMPID name="Produto" mc="Standard.Class" uid="7db196db-36dc-46de-8a1d-7b5a96872adf"/>
+        <COMPID name="ItemPedido" mc="Standard.Class" uid="4e41da3e-c6db-4510-b473-c74d2b3123e3"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="leiriadoceria Class diagram" mc="Standard.ClassDiagram" uid="5e330758-1adc-4bd8-a13c-7ca88b59abb5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
