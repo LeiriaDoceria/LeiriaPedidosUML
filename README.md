@@ -1,4 +1,4 @@
-## Diagrama de Classes
+# Diagrama de Classes
 
 ![image](https://github.com/user-attachments/assets/9823fe70-edfe-4f12-96ea-e0eaf4c14c64)
 
@@ -88,7 +88,7 @@ class ItemPedido(models.Model):
     quantidade = models.PositiveIntegerField()
 ```
 
-## Diagrama de Componentes
+# Diagrama de Componentes
 
 ![image](https://github.com/user-attachments/assets/5ba00d24-5f50-449c-9baf-d75d38ff6b92)
 
