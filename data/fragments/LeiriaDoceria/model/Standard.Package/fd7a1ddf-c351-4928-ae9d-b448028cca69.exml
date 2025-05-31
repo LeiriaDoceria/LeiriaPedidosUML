@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagrama de Componente" version="4">
+  <OBJECT>
+    <ID name="Diagrama de Componente" mc="Standard.Package" uid="fd7a1ddf-c351-4928-ae9d-b448028cca69"/>
+    <PID name="LeiriaDoceria" mc="Standard.Project" uid="ce583483-dd4e-4050-841e-0c74282d22f0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagrama de Componente]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Forms" mc="Standard.Component" uid="cc019eca-9a93-4b80-85f6-4ff3279f642b"/>
+        <COMPID name="Models" mc="Standard.Component" uid="6959123a-be6a-4de4-9209-7263057a2b8b"/>
+        <COMPID name="Templates" mc="Standard.Component" uid="c51818d2-5c5f-4541-8dc6-65ff427a85db"/>
+        <COMPID name="Views" mc="Standard.Component" uid="05409e99-e2bc-4e12-9c70-bc4212ff7590"/>
+        <COMPID name="URLs" mc="Standard.Component" uid="4f3f47f5-38a9-4cdd-917e-125cd4fc7f0b"/>
+        <COMPID name="Admin" mc="Standard.Component" uid="30d3df00-8f46-4239-9de9-64de3ae9d844"/>
+        <COMPID name="Client Browser" mc="Standard.Component" uid="bdf9d751-06e5-4989-819b-c29480c52790"/>
+        <COMPID name="Responses" mc="Standard.Component" uid="94d53aec-ccbf-4a60-884a-62d5fe3d35fc"/>
+        <COMPID name="Middleware" mc="Standard.Component" uid="3cb16589-ea47-40b5-bdb8-5e3140bfe825"/>
+        <COMPID name="Static" mc="Standard.Component" uid="dbaa44f1-0d5b-4d8e-a72f-a3b768f5951c"/>
+        <COMPID name="Database" mc="Standard.Component" uid="fddbaccf-6b04-4cdd-ba93-a0b5956eaabf"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de Componente Class diagram" mc="Standard.ClassDiagram" uid="3e404e98-4917-4490-9755-c5edd085e72f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

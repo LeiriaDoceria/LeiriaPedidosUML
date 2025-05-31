@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="leiriadoceria" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagrama de Classe" version="4">
   <OBJECT>
-    <ID name="leiriadoceria" mc="Standard.Package" uid="11fc3fd9-2293-4881-b477-d8c93db6d635"/>
+    <ID name="Diagrama de Classe" mc="Standard.Package" uid="11fc3fd9-2293-4881-b477-d8c93db6d635"/>
     <PID name="LeiriaDoceria" mc="Standard.Project" uid="ce583483-dd4e-4050-841e-0c74282d22f0"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[leiriadoceria]]></ATT>
+      <ATT name="Name"><![CDATA[Diagrama de Classe]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

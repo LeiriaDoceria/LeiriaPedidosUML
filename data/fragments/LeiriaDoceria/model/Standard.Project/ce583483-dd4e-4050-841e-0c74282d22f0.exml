@@ -10,7 +10,8 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Model">
-        <COMPID name="leiriadoceria" mc="Standard.Package" uid="11fc3fd9-2293-4881-b477-d8c93db6d635"/>
+        <COMPID name="Diagrama de Classe" mc="Standard.Package" uid="11fc3fd9-2293-4881-b477-d8c93db6d635"/>
+        <COMPID name="Diagrama de Componente" mc="Standard.Package" uid="fd7a1ddf-c351-4928-ae9d-b448028cca69"/>
       </COMP>
       <COMP relation="DiagramRoot">
         <COMPID name="LeiriaDoceria" mc="Infrastructure.DiagramSet" uid="f90f5583-5808-4908-9482-31a68dd44400"/>
