@@ -14,7 +14,7 @@
 | `numero_cliente`   | string   | Telefone ou número de contato.         |
 | `endereco_cliente` | string   | Endereço de onde o cliente é.          |
 | `endereco_entrega` | string   | Local da entrega.                      |
-| `valor`            | decimal  | Valor total do pedido.                 |
+| `valor`            | double   | Valor total do pedido.                 |
 | `data_entrega`     | date     | Data programada da entrega.            |
 | `hora_entrega`     | string   | Hora da entrega.                       |
 | `observacoes`      | string   | Notas adicionais do pedido.            |
