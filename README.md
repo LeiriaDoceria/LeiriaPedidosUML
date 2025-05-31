@@ -1,3 +1,90 @@
+## Diagrama de Classes
+
+- `Pedido` – Representa um pedido feito por um cliente.
+- `Produto` – Representa um item vendável.
+- `ItemPedido` – Representa a relação entre pedidos e produtos, contendo também a quantidade.
+
+### Pedido
+
+| Campo              | Tipo     | Descrição                              |
+|--------------------|----------|----------------------------------------|
+| `nome_cliente`     | string   | Nome completo do cliente.              |
+| `numero_cliente`   | string   | Telefone ou número de contato.         |
+| `endereco_cliente` | string   | Endereço de onde o cliente é.          |
+| `endereco_entrega` | string   | Local da entrega.                      |
+| `valor`            | string   | Valor total do pedido.                 |
+| `data_entrega`     | date     | Data programada da entrega.            |
+| `hora_entrega`     | string   | Hora da entrega.                       |
+| `observacoes`      | string   | Notas adicionais do pedido.            |
+
+### Produto
+
+| Campo           | Tipo     | Descrição                                 |
+|------------------|----------|---------------------------------------------|
+| `nome`           | string   | Nome do produto.                           |
+| `medido_por`     | string   | Unidade de medida (kg, unidade, etc).      |
+| `preco`          | double   | Preço unitário.                            |
+| `observacoes`    | string   | Observações adicionais sobre o produto.    |
+
+### ItemPedido
+
+| Campo         | Tipo     | Descrição                                    |
+|---------------|----------|----------------------------------------------|
+| `pedido`      | Pedido   | Referência ao pedido relacionado.            |
+| `produto`     | Produto  | Produto relacionado ao item.                 |
+| `quantidade`  | string   | Quantidade solicitada do produto.            |
+
+## Relacionamentos
+
+- Um `Pedido` pode conter vários `ItemPedido`.
+- Um `Produto` pode aparecer em vários `ItemPedido`.
+- Cada `ItemPedido` está vinculado a **um** `Pedido` e **um** `Produto`.
+
+## Implementação em código
+
+```python
+from django.db import models
+
+# Create your models here.
+class Produto(models.Model):
+    MEDIDO_POR_CHOICES = [
+        ('UNIDADE', 'Unidade'),
+        ('CENTO', 'Cento'),
+        ('QUILO', 'Quilo')
+    ]
+
+    nome = models.CharField(max_length=50)
+    medido_por = models.CharField(
+        max_length=10,
+        choices=MEDIDO_POR_CHOICES,
+        default='UNIDADE'
+    )
+    preco = models.DecimalField(max_digits=6, decimal_places=2)
+    observacoes = models.TextField(max_length=75, blank=True, null=True)
+
+    def __str__(self):
+        return(f"{self.nome}")
+    
+class Pedido(models.Model):
+    nome_cliente = models.CharField(max_length=50)
+    numero_cliente = models.CharField(max_length=20)
+    endereco_cliente = models.TextField(max_length=100)
+    endereco_entrega = models.TextField(max_length=100)
+    produtos = models.ManyToManyField(Produto, through="ItemPedido")
+    valor = models.DecimalField(default=0.00, max_digits=6, decimal_places=2)
+    data_entrega = models.DateField(null=True)
+    hora_entrega = models.TimeField(null=True)
+    observacoes = models.TextField(max_length=100, blank=True, null=True)
+
+    def __str__(self):
+        return(f"Pedido #{self.id}")
+    
+class ItemPedido(models.Model):
+    pedido = models.ForeignKey(Pedido, on_delete=models.CASCADE)
+    produto = models.ForeignKey(Produto, on_delete=models.CASCADE)
+    quantidade = models.PositiveIntegerField()
+```
+
 ## Diagrama de Componentes
 
 ### Client Browser
