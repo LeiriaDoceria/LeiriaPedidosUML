@@ -1,5 +1,7 @@
 ## Diagrama de Componentes
 
+![image](https://github.com/user-attachments/assets/5ba00d24-5f50-449c-9baf-d75d38ff6b92)
+
 ### Client Browser
 - Interface do usuário (ex: navegador).
 - Envia requisições HTTP (GET, POST, PUT, DELETE).
