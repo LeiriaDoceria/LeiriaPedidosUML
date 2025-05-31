@@ -1,7 +1,6 @@
 # Diagrama de Classes
 
-![image](https://github.com/user-attachments/assets/9823fe70-edfe-4f12-96ea-e0eaf4c14c64)
-
+![image](https://github.com/user-attachments/assets/a9a3cb2f-9e72-4255-9a0a-8c66dea8e057)
 
 - `Pedido` – Representa um pedido feito por um cliente.
 - `Produto` – Representa um item vendável.
@@ -15,15 +14,15 @@
 | `numero_cliente`   | string   | Telefone ou número de contato.         |
 | `endereco_cliente` | string   | Endereço de onde o cliente é.          |
 | `endereco_entrega` | string   | Local da entrega.                      |
-| `valor`            | string   | Valor total do pedido.                 |
+| `valor`            | decimal  | Valor total do pedido.                 |
 | `data_entrega`     | date     | Data programada da entrega.            |
 | `hora_entrega`     | string   | Hora da entrega.                       |
 | `observacoes`      | string   | Notas adicionais do pedido.            |
 
 ### Produto
 
-| Campo           | Tipo     | Descrição                                 |
-|------------------|----------|---------------------------------------------|
+| Campo            | Tipo     | Descrição                                  |
+|------------------|----------|--------------------------------------------|
 | `nome`           | string   | Nome do produto.                           |
 | `medido_por`     | string   | Unidade de medida (kg, unidade, etc).      |
 | `preco`          | double   | Preço unitário.                            |
