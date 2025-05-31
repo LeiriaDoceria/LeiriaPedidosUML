@@ -5,7 +5,7 @@
 
 - `Pedido` – Representa um pedido feito por um cliente.
 - `Produto` – Representa um item vendável.
-- `ItemPedido` – Representa a relação entre pedidos e produtos, contendo também a quantidade.
+- `ItemPedido` – Representa a relação Muitos para Muitos entre pedidos e produtos, contendo também a quantidade.
 
 ### Pedido
 
