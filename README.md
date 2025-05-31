@@ -1,5 +1,8 @@
 ## Diagrama de Classes
 
+![image](https://github.com/user-attachments/assets/9823fe70-edfe-4f12-96ea-e0eaf4c14c64)
+
+
 - `Pedido` – Representa um pedido feito por um cliente.
 - `Produto` – Representa um item vendável.
 - `ItemPedido` – Representa a relação entre pedidos e produtos, contendo também a quantidade.
